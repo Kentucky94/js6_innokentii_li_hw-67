@@ -5,10 +5,10 @@
   justify-content: space-between;
   margin: 50px auto;
   padding: 20px;
-  width: 300px;
+  width: 350px;
 }
 
-.display{
+.Lock p{
   align-items: center;
   border: 1px solid lightgrey;
   display: flex;
@@ -24,4 +24,16 @@
   margin: 10px 0;
   padding: 20px;
   width: 30%;
+}
+
+.general{
+  background: #fff;
+}
+
+.success{
+  background: lightgreen;
+}
+
+.failure{
+  background: indianred;
 }

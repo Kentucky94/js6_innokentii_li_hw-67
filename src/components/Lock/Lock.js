@@ -7,7 +7,7 @@ class Lock extends Component {
   render() {
     return (
       <div className='Lock'>
-        <p className="display">{this.props.value}</p>
+        <p className={this.props.displayColor}>{this.props.value}</p>
         <button onClick={this.props.addSeven}>7</button>
         <button onClick={this.props.addEight}>8</button>
         <button onClick={this.props.addNine}>9</button>
@@ -28,6 +28,7 @@ class Lock extends Component {
 const mapStateToProps = state => {
   return {
     value: state.value,
+    displayColor: state.displayColor,
   }
 };
 
