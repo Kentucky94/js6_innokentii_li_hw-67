@@ -7,7 +7,7 @@ class Lock extends Component {
   render() {
     const buttonOrder = [7, 8, 9, 4, 5, 6, 1, 2, 3];
 
-    const buttons = buttonOrder.map(button => <button onClick={this.props.addNumber}>{button}</button>);
+    const buttons = buttonOrder.map(button => <button key={button} onClick={this.props.addNumber}>{button}</button>);
 
     return (
       <div className='Lock'>
